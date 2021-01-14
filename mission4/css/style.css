@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul > li {
+  font-size: 20px;
+  margin-bottom: 10;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+}
+
+.todo-input,
+.todo-count,
+.todo-remove-all {
+  margin-bottom: 10;
+}
+
+.todo-input {
+  text-align: center;
+  width: 50%;
+}
+
+.todo-remove-all {
+  width: 20%;
+}
+
+.main-content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow: auto;
+}
+
+.mini-trello {
+  display: flex;
+  width: 70%;
+  background-color: rgb(236, 234, 234);
+  justify-content: space-around;
+  overflow: auto;
+}
+
+.users {
+  display: flex;
+  flex: 1;
+  background-color: rgb(243, 243, 243);
+  overflow: auto;
+}
+
+.users > ul > li {
+  font-size: 15px;
+  margin-bottom: 5;
+}
+
+#todo-title {
+  text-align: center;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  position: fixed;
+  display: block;
+  opacity: 0.7;
+  background-color: #fff;
+  text-align: center;
+}
+
+.loading-img {
+  position: relative;
+  top: 40%;
+}
+
+.loading-completed {
+  display: none;
+}
+
+.view-delete-all-btn {
+  display: flex;
+}
+
+.hide-all-btn-hide {
+  display: none;
+}
+
+.view-delete-btn {
+  display: inline-block;
+}
+
+.hide-delete-btn {
+  display: none;
+}
